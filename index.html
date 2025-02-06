@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プロフィール</title>
     <base href="https://edonurcahyo.github.io/Profile/">
-    <link rel="shortcut icon" href="/images/main.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="shortcut icon" href="images/main.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
 
     <header class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a href="/index.html" class="navbar-item has-text-white">
+                <a href="index.html" class="navbar-item has-text-white">
                     <h1 class="title is-3 has-text-danger">Hendrikus</h1>
                 </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
@@ -24,8 +24,8 @@
             </div>
             <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-end is-size-5">
-                    <a href="/index.html" class="navbar-item has-text-danger">Home</a>
-                    <a href="/education.html" class="navbar-item has-text-white">Education</a>
+                    <a href="index.html" class="navbar-item has-text-danger">Home</a>
+                    <a href="education.html" class="navbar-item has-text-white">Education</a>
                 </div>
             </div>
         </div>
@@ -37,14 +37,7 @@
                 
                 <div class="column is-half">
                     <figure class="image">
-                        <img src="/images/Pas Foto.jpg" alt="Profile Picture" style="
-                            display: block;
-                            max-width: 80%;
-                            height: auto;
-                            border-radius: 40%;
-                            object-fit: cover;
-                            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-                            margin: 0 auto;">
+                        <img src="images/Pas Foto.jpg" alt="Profile Picture" style="display: block; max-width: 80%; height: auto; border-radius: 40%; object-fit: cover; box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); margin: 0 auto;">
                     </figure>
                 </div>
 
@@ -68,16 +61,16 @@
                     
                     <div class="buttons">
                         <a href="https://wa.me/qr/QWMSCOUSASK2E1" target="_blank" class="button is-danger is-light">
-                            <img src="/images/WA Icon.png" width="22" height="22" alt="WhatsApp">
+                            <img src="images/WA Icon.png" width="22" height="22" alt="WhatsApp">
                         </a>
                         <a href="https://github.com/edonurcahyo" target="_blank" class="button is-danger is-light">
-                            <img src="/images/GitHub Icon.png" width="22" height="22" alt="GitHub">
+                            <img src="images/GitHub Icon.png" width="22" height="22" alt="GitHub">
                         </a>
                         <a href="https://x.com/soraken__" target="_blank" class="button is-danger is-light">
-                            <img src="/images/X Icon.png" width="22" height="22" alt="Twitter/X">
+                            <img src="images/X Icon.png" width="22" height="22" alt="Twitter/X">
                         </a>
                         <a href="https://www.instagram.com/edo_nurcahyo/" target="_blank" class="button is-danger is-light">
-                            <img src="/images/IG Icon.png" width="22" height="22" alt="Instagram">
+                            <img src="images/IG Icon.png" width="22" height="22" alt="Instagram">
                         </a>
                     </div>
 
@@ -85,17 +78,17 @@
             </div>
         </div>
     </section>
-</body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.querySelector('.navbar-burger');
-        const menu = document.querySelector('#navbarMenu');
-        burger.addEventListener('click', () => {
-            burger.classList.toggle('is-active');
-            menu.classList.toggle('is-active');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('#navbarMenu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
         });
-    });
-</script>
+    </script>
 
+</body>
 </html>
