@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <title>プロフィール</title>
+    <link rel="shortcut icon" href="images/main.jpg" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="/index.html" class="navbar-item has-text-white">
+                    <h1 class="title is-3 has-text-danger">Hendrikus</h1>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end is-size-5">
+                    <a href="/index.html" class="navbar-item has-text-white">Home</a>
+                    <a href="/education.html" class="navbar-item has-text-danger">Education</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h1 class="title has-text-danger has-text-centered is-size-3-mobile is-size-2-tablet">Education</h1>
+            <p class="is-size-5-mobile is-size-4-tablet has-text-grey-light has-text-centered mb-6">I studied at:</p>
+            <div class="table-container">
+                <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Education</th>
+                            <th>Time Occurs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SDN KERTAJAYA PUJA</td>
+                            <td>2010 - 2016</td>
+                        </tr>
+                        <tr>
+                            <td>SMPN 29 Surabaya</td>
+                            <td>2016 - 2019</td>
+                        </tr>
+                        <tr>
+                            <td>SMA GIKI 2 Surabaya</td>
+                            <td>2019 - 2022</td>
+                        </tr>
+                        <tr>
+                            <td>Institut Teknologi Adhi Tama Surabaya</td>
+                            <td>2022 - Now</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('#navbarMenu');
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+</html>
